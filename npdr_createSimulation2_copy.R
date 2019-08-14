@@ -34,7 +34,7 @@ generate_structured_corrmat <- function(g=NULL,
   }else{                                                          # if all are connected
     idx.connected <- seq(1,length(kvec),by=1)
   }
-  
+  # b
   # functional variables are randomly defined from connected variables
   if(length(idx.connected) >= nbias){                             # if number connected at least nbias
     diff.cor.vars <- sample(idx.connected,size=nbias,replace=F)
