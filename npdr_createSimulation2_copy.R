@@ -1,10 +1,3 @@
-#Rcpp::sourceCpp('R/arma_getEigenValues.cpp')
-#Rcpp::cppFunction(depends="RcppArmadillo",
-#                    'arma::vec getEigenValues(arma::mat M) {
-#                    return arma::eig_sym(M);
-#}')
-
-
 #=========================================================================================#
 #' generate_structured_corrmat
 #'
