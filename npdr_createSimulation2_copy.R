@@ -1,3 +1,31 @@
+if(!"igraph"%in%row.names(installed.packages())){
+  install.packages("igraph", dependencies=TRUE)}
+if(!"Matrix"%in%row.names(installed.packages())){
+  install.packages("Matrix", dependencies=TRUE)}
+if(!"privateEC"%in%row.names(installed.packages())){
+  
+  if(!"devtools"%in%row.names(installed.packages())){
+    install.packages("devtools")
+    library(devtools)
+  }
+  install_github("insilico/privateEC")
+  
+}
+if(!"Rcpp"%in%row.names(installed.packages())){
+  install.packages("Rcpp", dependencies=TRUE)}
+if(!"RcppArmadillo"%in%row.names(installed.packages())){
+  install.packages("RcppArmadillo", dependencies=TRUE)}
+if(!"mvtnorm"%in%row.names(installed.packages())){
+  install.packages("mvtnorm", dependencies=TRUE)}
+if(!"Rfast"%in%row.names(installed.packages())){
+  install.packages("Rfast", dependencies=TRUE)}
+
+library(igraph)
+library(Matrix)
+library(privateEC)
+library(Rcpp)
+library(RcppArmadillo)
+
 #=========================================================================================#
 #' generate_structured_corrmat
 #'
